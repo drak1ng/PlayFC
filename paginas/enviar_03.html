@@ -37,32 +37,53 @@
     <body>
 	    <div data-role="page" style="background:#FFF;">
 		    <div class="topo">
-			    <div class="logotipo" id="enviar_02_logotipo"><img src="../img/logo2.png" alt="logo2" height="24" /></div>
+			    <div class="logotipo" id="config_meus_dados_logotipo"><img src="../img/logo2.png" alt="logo2" height="24" /></div>
 			    <div class="titulo_tela">COMO FOI O SEU GOL?</div>
 		    </div>
 
 			<div role="main" class="ui-content">
-				<div id="id_conteudo_meu_gol_02" style="text-align:center; padding:80px 0px 50px 0px; color:#999; font-size:14px; text-transform:none; text-align:justify;">
+				<div id="id_conteudo_meus_dados" style="text-align:center; padding:80px 0px 50px 0px; color:#999; font-size:14px; text-transform:none; text-align:justify;">
+					<div style="padding-top:120px; text-align:center; font-size:13px;">
+						<img src="../img/loading.gif" width="110" height="10" /><br><br>
+						Aguarde carregando...
+					</div>
 				</div>
 			</div>
 			
 			<div class="botoes-rodape">
-				<div class="botao" id="bt_enviar_02_narracoes" style="background-image:url(../img/icon_002.png);">Narrações</div>
-				<div class="botao" id="bt_enviar_02_enviar" style="background:url(../img/icon_000.png) center 10px no-repeat #000; background-size:40px; padding-top:46px; color:#FFF; margin:-14px 0px -2px 0px; height:40px; border-radius:10px 10px 0px 0px; width:34%; -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4); box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);">Enviar Narração</div>
-				<div class="botao" id="bt_enviar_02_configuracao" style="background-image:url(../img/icon_004.png);">Meu Cadastro</div>
+				<div class="botao" id="bt_config_meus_dados_narracoes" style="background-image:url(../img/icon_002.png);">Narrações</div>
+				<div class="botao" id="bt_config_meus_dados_enviar" style="background:url(../img/icon_000.png) center 10px no-repeat #000; background-size:40px; padding-top:46px; color:#FFF; margin:-14px 0px -2px 0px; height:40px; border-radius:10px 10px 0px 0px; width:34%; -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4); box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);">Enviar Narração</div>
+				<div class="botao" id="bt_config_meus_dados_configuracao" style="background-image:url(../img/icon_004.png);">Meu Cadastro</div>
 			</div>
 		
-			
 			<script>
 				
-				$.get("http://playfc.projetotemporario.com.br/api_app/meu_gol_02.php", function(data){ $("#id_conteudo_meu_gol_02").html(data); });
+				window.localStorage.setItem('voltar_cadastro','sim');
 				
-				$("#bt_enviar_02_narracoes").click(function(){
+				var app_id = window.localStorage.getItem('app_id');
+				
+				if(app_id=="" || app_id==null){
+					$.get("http://playfc.projetotemporario.com.br/api_app/entrar.php", function(data){ $("#id_conteudo_meus_dados").html(data); });
+				}else{
+					$.get("http://playfc.projetotemporario.com.br/api_app/meu_gol_03.php", { id:app_id }, function(data){ $("#id_conteudo_meus_dados").html(data); });
+				}
+				
+				$("#ficha_meus_dados_voltar").click(function(){
+					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
+					$.mobile.changePage("configuracao.html", { transition: "fade", changeHash: false });
+				});
+				
+				$("#bt_config_meus_dados_narracoes").click(function(){
 					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("narracoes.html", { transition: "fade", changeHash: false });
 				});
 				
-				$("#bt_enviar_02_configuracao").click(function(){
+				$("#bt_config_meus_dados_enviar").click(function(){
+					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
+					$.mobile.changePage("enviar.html", { transition: "fade", changeHash: false });
+				});
+				
+				$("#bt_config_meus_dados_configuracao").click(function(){
 					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("configuracao.html", { transition: "fade", changeHash: false });
 				});

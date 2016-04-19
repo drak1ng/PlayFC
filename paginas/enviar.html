@@ -43,9 +43,6 @@
 
 			<div role="main" class="ui-content">
 				<div id="id_conteudo_meu_gol" style="text-align:center; padding:80px 0px 50px 0px; color:#999; font-size:14px; text-transform:none; text-align:justify;">
-					<div style="height:150px; padding-top:30px; text-align:center;"><img src="../img/icon_006.png" width="90" /></div>
-					<p style="font-size:12px;"><b>Exemplo:</b> Jogando pelo paulistano a semi final do interclubes, quando em um contra-ataque o nosso lateral, tabelou com o meia, pois na frente do zagueiro, ganhou na corrida, sofreu uma falta, mas não caiu e cruzou de direita no segundo pau. Eu estava jogando na meia esquerda, acompanhei a jogada e qando a bola veio dei um sem pulo da entrada da área e acertei o ângulo esquerdo do goleiro. Um verdadeiro Golaço! Com esse gol vencemos de 2x1 e classificamos para a final.</p>
-					<input type="submit" value="Próxima Etapa" id="bt_enviar" style="background-color:#81B91D; font-size:18px; text-indent:0px; font-weight:bold; opacity:1; color:#FFF; border:1px solid #3D8D12 !important;">
 				</div>
 			</div>
 			
@@ -58,10 +55,7 @@
 			
 			<script>
 				
-				$("#bt_enviar").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
-					$.mobile.changePage("enviar_02.html", { transition: "slide", changeHash: false });
-				});
+				$.get("http://playfc.projetotemporario.com.br/api_app/meu_gol_01.php", function(data){ $("#id_conteudo_meu_gol").html(data); });
 				
 				$("#bt_enviar_narracoes").click(function(){
 					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });

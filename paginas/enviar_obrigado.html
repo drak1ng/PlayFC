@@ -37,32 +37,44 @@
     <body>
 	    <div data-role="page" style="background:#FFF;">
 		    <div class="topo">
-			    <div class="logotipo" id="enviar_02_logotipo"><img src="../img/logo2.png" alt="logo2" height="24" /></div>
-			    <div class="titulo_tela">COMO FOI O SEU GOL?</div>
+			    <div class="logotipo" id="cadastro_sucesso_logotipo"><img src="../img/logo2.png" alt="logo2" height="24" /></div>
+			    <div class="titulo_tela">COMO FOI O SEU GOL!</div>
 		    </div>
 
 			<div role="main" class="ui-content">
-				<div id="id_conteudo_meu_gol_02" style="text-align:center; padding:80px 0px 50px 0px; color:#999; font-size:14px; text-transform:none; text-align:justify;">
+				<div id="id_conteudo_meu_gol_sucesso" style="text-align:center; padding:80px 0px 50px 0px; color:#999; font-size:14px; text-transform:none; text-align:justify;">
 				</div>
 			</div>
 			
 			<div class="botoes-rodape">
-				<div class="botao" id="bt_enviar_02_narracoes" style="background-image:url(../img/icon_002.png);">Narrações</div>
-				<div class="botao" id="bt_enviar_02_enviar" style="background:url(../img/icon_000.png) center 10px no-repeat #000; background-size:40px; padding-top:46px; color:#FFF; margin:-14px 0px -2px 0px; height:40px; border-radius:10px 10px 0px 0px; width:34%; -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4); box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);">Enviar Narração</div>
-				<div class="botao" id="bt_enviar_02_configuracao" style="background-image:url(../img/icon_004.png);">Meu Cadastro</div>
+				<div class="botao" id="bt_meu_gol_sucesso_narracoes" style="background-image:url(../img/icon_002.png);">Narrações</div>
+				<div class="botao" id="bt_meu_gol_sucesso_enviar" style="background:url(../img/icon_000.png) center 10px no-repeat #000; background-size:40px; padding-top:46px; color:#FFF; margin:-14px 0px -2px 0px; height:40px; border-radius:10px 10px 0px 0px; width:34%; -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4); box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);">Enviar Narração</div>
+				<div class="botao" id="bt_meu_gol_sucesso_configuracao" style="background-image:url(../img/icon_004.png);">Meu Cadastro</div>
 			</div>
 		
 			
 			<script>
+
+				var x = '<br><br><h1><b>GOL ENVIADO<br>COM SUCESSO!<b></h1><p style="font-size:13px; text-align:center;">Em breve publicaremos a<br>narração do seu gol no aplicativo.</p><div id="bt_meu_gol_sucesso" style="background-color:#81B91D; font-size:18px; text-indent:0px; font-weight:bold; opacity:1; color:#FFF; border:1px solid #3D8D12 !important; border-radius:6px; text-align:center; padding:10px 0px; margin-top:10px; position:absolute; bottom:78px; width: -moz-calc(100% - 34px); width: -webkit-calc(100% - 34px); width: -o-calc(100% - 34px); width: calc(100% - 34px);">Veja outras narrações</div>';
 				
-				$.get("http://playfc.projetotemporario.com.br/api_app/meu_gol_02.php", function(data){ $("#id_conteudo_meu_gol_02").html(data); });
+				$('#id_conteudo_meu_gol_sucesso').html(x);
 				
-				$("#bt_enviar_02_narracoes").click(function(){
+				$("#bt_meu_gol_sucesso").click(function(){
 					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("narracoes.html", { transition: "fade", changeHash: false });
 				});
 				
-				$("#bt_enviar_02_configuracao").click(function(){
+				$("#bt_meu_gol_sucesso_enviar").click(function(){
+					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
+					$.mobile.changePage("enviar_02.html", { transition: "fade", changeHash: false });
+				});
+				
+				$("#bt_meu_gol_sucesso_narracoes").click(function(){
+					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
+					$.mobile.changePage("narracoes.html", { transition: "fade", changeHash: false });
+				});
+				
+				$("#bt_meu_gol_sucesso_configuracao").click(function(){
 					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("configuracao.html", { transition: "fade", changeHash: false });
 				});
