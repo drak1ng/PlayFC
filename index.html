@@ -40,9 +40,13 @@
 	    <div data-role="page" style="background:url(./img/fundo_login.jpg) center center no-repeat #333; background-size:cover;">
 			<script>
 				$(document).ready(function(){
+					setTimeout(carregar, 3000);
+				});
+				
+				function carregar(){
 					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("./paginas/narracoes.html", { transition: "fade", changeHash: false });
-				});
+				}
 			</script>
 		</div>
     </body>
