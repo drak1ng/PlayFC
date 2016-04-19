@@ -188,6 +188,14 @@ h1 {
 	padding:5px 0px 0px 10px;
 }
 
+.bt_buscar {
+	min-width:10px;
+	float:right;
+	font-size:12px;
+	font-weight:normal;
+	padding:5px 10px 0px 0px;
+}
+
  a.sm2_link {}
  a.sm2_link:hover {}
 

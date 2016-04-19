@@ -38,7 +38,10 @@
 	    <div data-role="page" style="background:#999;">
 		    <div class="topo" style="z-index:999;">
 			    <div class="logotipo" id="narracoes_logotipo"><img src="../img/logo2.png" alt="logo2" height="24" /></div>
-			    <div class="titulo_tela">NARRAÇÕES</div>
+			    <div class="titulo_tela" id="barra_titulo_buscar">
+				    <div class='bt_buscar' id='ficha_narracao_buscar'>Buscar</div>
+					<div style='margin:0px 100px;'>NARRAÇÕES</div>
+				</div>
 		    </div>
 
 			<div role="main" class="ui-content">
@@ -61,6 +64,10 @@
 				window.localStorage.setItem('narracao_voltar','narracoes.html');
 				
 				$.get("http://playfc.projetotemporario.com.br/api_app/narracoes.php", function(data){ $("#id_conteudo_narracoes").html(data); });
+				
+				$("#ficha_narracao_buscar").click(function(){
+					$.get("http://playfc.projetotemporario.com.br/api_app/campo_busca.php", function(data){ $("#barra_titulo_buscar").html(data); });
+				});
 				
 				$("#bt_narracoes_enviar").click(function(){
 					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
