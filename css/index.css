@@ -143,7 +143,7 @@ h1 {
 .topo .logotipo {
 	background:#000;
 	text-align:center;
-	padding:12px 0px 6px 0px;
+	padding:32px 0px 6px 0px;
 }
 
 .topo .titulo_tela {
@@ -195,6 +195,9 @@ h1 {
 	font-weight:normal;
 	padding:5px 10px 0px 0px;
 }
+
+.ui-content { margin-top:20px !important; }
+
 
  a.sm2_link {}
  a.sm2_link:hover {}
