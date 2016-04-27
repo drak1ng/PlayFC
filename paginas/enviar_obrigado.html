@@ -48,12 +48,18 @@
 			
 			<div class="botoes-rodape">
 				<div class="botao" id="bt_meu_gol_sucesso_narracoes" style="background-image:url(../img/icon_002.png);">Narrações</div>
-				<div class="botao" id="bt_meu_gol_sucesso_enviar" style="background:url(../img/icon_000.png) center 10px no-repeat #000; background-size:40px; padding-top:46px; color:#FFF; margin:-14px 0px -2px 0px; height:40px; border-radius:10px 10px 0px 0px; width:34%; -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4); box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);">Enviar Narração</div>
+				<div class="botao" id="bt_meu_gol_sucesso_enviar" style="background:url(../img/icon_000.png) center 10px no-repeat #000; background-size:40px; padding-top:46px; color:#FFF; margin:-14px 0px -2px 0px; height:40px; border-radius:10px 10px 0px 0px; width:34%; -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4); box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);">Seu Goool!</div>
 				<div class="botao" id="bt_meu_gol_sucesso_configuracao" style="background-image:url(../img/icon_004.png);">Meu Cadastro</div>
 			</div>
 		
 			
 			<script>
+
+				window.localStorage.setItem('apelido_gol','');
+				window.localStorage.setItem('time_gol','');
+				window.localStorage.setItem('camisa_gol','');
+				window.localStorage.setItem('campeonato_gol','');
+				window.localStorage.setItem('texto_gol','');
 
 				var x = '<br><br><h1><b>GOL ENVIADO<br>COM SUCESSO!<b></h1><p style="font-size:13px; text-align:center;">Em breve publicaremos a<br>narração do seu gol no aplicativo.</p><div id="bt_meu_gol_sucesso" style="background-color:#81B91D; font-size:18px; text-indent:0px; font-weight:bold; opacity:1; color:#FFF; border:1px solid #3D8D12 !important; border-radius:6px; text-align:center; padding:10px 0px; margin-top:10px; position:absolute; bottom:78px; width: -moz-calc(100% - 34px); width: -webkit-calc(100% - 34px); width: -o-calc(100% - 34px); width: calc(100% - 34px);">Veja outras narrações</div>';
 				

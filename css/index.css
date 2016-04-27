@@ -114,8 +114,6 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-
-
 .carregando {
 	padding:230px 0px 200px 0px;
 	background:url(../img/loading.gif) center center no-repeat;
@@ -138,6 +136,7 @@ h1 {
 	position:fixed;
 	top:0px;
 	left:0px;
+	z-index:9999;
 }
 
 .topo .logotipo {
