@@ -74,6 +74,16 @@
 	<preference name="StatusBarBackgroundColor" value="#000000"/>
 </gap:plugin>
 
+<feature name="Notification">
+    <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+</feature>
+<feature name="Vibration">
+    <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+</feature>
+<feature name="Notification">
+    <param name="ios-package" value="CDVNotification" />
+</feature>
+
 <preference name="webviewbounce" value="false" />
 <preference name="DisallowOverscroll" value="true" />
 <preference name="stay-in-webview" value="false"/> 
