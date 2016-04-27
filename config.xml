@@ -73,10 +73,12 @@
 	<preference name="StatusBarOverlaysWebView" value="true" />
 	<preference name="StatusBarBackgroundColor" value="#000000"/>
 </gap:plugin>
+<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
 <preference name="webviewbounce" value="false" />
 <preference name="DisallowOverscroll" value="true" />
 <preference name="stay-in-webview" value="false"/> 
 <access origin="*" browserOnly="true"/> 
+
 <!--In App Browser-->
 <!--<gap:plugin name="org.li8.inappbrowser" version="0.1" />-->
 
