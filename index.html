@@ -48,13 +48,26 @@
 					setTimeout(carregar, 3000);
 				});
 				
+				document.addEventListener("deviceready", onDeviceReady, false);
+			
+			    // device APIs are available
+			    //
+			    function onDeviceReady() {
+			        // Empty
+			    }
+			
+			    // alert dialog dismissed
+			    function alertDismissed() {
+			        // do something
+			    }
+				
 				function carregar(){
 					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("./paginas/enviar_02.html", { transition: "fade", changeHash: false });
 				}
 				
 				alert = function (txt) {
-					confirm("Close");
+					windows.alert("Close");
 				}
 				
 			</script>
