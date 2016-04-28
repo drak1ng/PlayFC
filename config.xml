@@ -95,8 +95,8 @@
 <!--Upload de arquivos -->
 <gap:plugin name="org.apache.cordova.file-transfer" />
 
-<!-- Push notification -->
-<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.5.0" />
+
+<gap:plugin name="org.apache.cordova.dialogs" />
 
 <!-- Device -->
 <gap:plugin name="org.apache.cordova.device" />
