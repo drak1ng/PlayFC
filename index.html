@@ -52,6 +52,11 @@
 					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("./paginas/enviar_02.html", { transition: "fade", changeHash: false });
 				}
+				
+				alert = function (txt) {
+					navigator.notification.alert(txt, null, "Alert", "Close");
+				}
+				
 			</script>
 		</div>
     </body>
