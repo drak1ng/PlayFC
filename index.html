@@ -43,27 +43,10 @@
 		    </div>
 			<script>
 				
-				$(document).ready(function(){
-					setTimeout(carregar, 3000);
-				});
-				
-				document.addEventListener("deviceready", onDeviceReady, false);
-			
-			    // device APIs are available
-			    //
-			    function onDeviceReady() {
-			        
-			    }
-			
-			    // alert dialog dismissed
-			    function alertDismissed() {
-			        // do something
-			    }
-				
-				function carregar(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
-					$.mobile.changePage("./paginas/enviar_02.html", { transition: "fade", changeHash: false });
-				}
+				document.addEventListener("deviceready", onDeviceReady, true); 
+		        function onDeviceReady() {
+		            alert ('123');
+		        }
 				
 				
 			</script>
