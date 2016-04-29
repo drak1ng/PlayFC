@@ -61,12 +61,10 @@
 				$.get("http://playfc.projetotemporario.com.br/api_app/configuracao.php", function(data){ $("#id_conteudo_configuracao").html(data); });
 				
 				$("#bt_config_narracoes").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("narracoes.html", { transition: "fade", changeHash: false });
 				});
 				
 				$("#bt_config_enviar").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("enviar_02.html", { transition: "fade", changeHash: false });
 				});
 				

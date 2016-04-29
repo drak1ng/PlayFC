@@ -62,17 +62,14 @@
 				$.get("http://playfc.projetotemporario.com.br/api_app/cadastro.php", function(data){ $("#id_conteudo_cadastro").html(data); });
 				
 				$("#bt_cadastro_narracoes").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("narracoes.html", { transition: "fade", changeHash: false });
 				});
 				
 				$("#bt_cadastro_enviar").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("enviar_02.html", { transition: "fade", changeHash: false });
 				});
 				
 				$("#bt_cadastro_configuracao").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("configuracao.html", { transition: "fade", changeHash: false });
 				});
 				

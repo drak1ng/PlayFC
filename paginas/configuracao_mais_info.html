@@ -64,22 +64,18 @@
 				$.get("http://playfc.projetotemporario.com.br/api_app/configuracao_mais_info.php", function(data){ $("#id_conteudo_mais_info").html(data); });
 				
 				$("#ficha_mais_info_voltar").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("configuracao.html", { transition: "fade", changeHash: false });
 				});
 				
 				$("#bt_config_mais_info_narracoes").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("narracoes.html", { transition: "fade", changeHash: false });
 				});
 				
 				$("#bt_config_mais_info_enviar").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("enviar_02.html", { transition: "fade", changeHash: false });
 				});
 				
 				$("#bt_config_mais_info_configuracao").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("configuracao.html", { transition: "fade", changeHash: false });
 				});
 				

@@ -62,26 +62,21 @@
 				$("#bt_sucesso").click(function(){
 					var voltar_cadastro = window.localStorage.getItem('voltar_cadastro');
 					if(voltar_cadastro=='sim'){
-						$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 						$.mobile.changePage("enviar_03.html", { transition: "fade", changeHash: false });
 					}else{
-						$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 						$.mobile.changePage("enviar.html", { transition: "fade", changeHash: false });
 					}
 				});
 				
 				$("#bt_cadastro_sucesso_enviar").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("enviar_02.html", { transition: "fade", changeHash: false });
 				});
 				
 				$("#bt_cadastro_sucesso_narracoes").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("narracoes.html", { transition: "fade", changeHash: false });
 				});
 				
 				$("#bt_cadastro_sucesso_configuracao").click(function(){
-					$.mobile.loading("show", { text:"Carregando Informações", theme:"b", textVisible:true, textonly:false, html:"" });
 					$.mobile.changePage("configuracao.html", { transition: "fade", changeHash: false });
 				});
 				
