@@ -70,9 +70,9 @@
 					$('div[data-role=page]').css('background-color','#FFF');
 					$('#id_conteudo_meus_dados').css('padding','80px 0px 50px 0px');
 					$('#id_conteudo_meus_dados').css('margin','0px');
-					$.get("http://playfc.projetotemporario.com.br/api_app/entrar.php", function(data){ $("#id_conteudo_meus_dados").html(data); });
+					$.get("http://playfcapp.com.br/api_app/entrar.php", function(data){ $("#id_conteudo_meus_dados").html(data); });
 				}else{
-					$.get("http://playfc.projetotemporario.com.br/api_app/narracoes.php", { opt:"minhas-narracoes", busca:app_id }, function(data){ $("#id_conteudo_meus_dados").html(data); });
+					$.get("http://playfcapp.com.br/api_app/narracoes.php", { opt:"minhas-narracoes", busca:app_id }, function(data){ $("#id_conteudo_meus_dados").html(data); });
 				}
 			
 				$("#ficha_minhas_narracoes_voltar").click(function(){

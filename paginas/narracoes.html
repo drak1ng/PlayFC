@@ -63,10 +63,10 @@
 				
 				window.localStorage.setItem('narracao_voltar','narracoes.html');
 				
-				$.get("http://playfc.projetotemporario.com.br/api_app/narracoes.php", function(data){ $("#id_conteudo_narracoes").html(data); });
+				$.get("http://playfcapp.com.br/api_app/narracoes.php", function(data){ $("#id_conteudo_narracoes").html(data); });
 				
 				$("#ficha_narracao_buscar").click(function(){
-					$.get("http://playfc.projetotemporario.com.br/api_app/campo_busca.php", function(data){ $("#barra_titulo_buscar").html(data); });
+					$.get("http://playfcapp.com.br/api_app/campo_busca.php", function(data){ $("#barra_titulo_buscar").html(data); });
 				});
 				
 				$("#bt_narracoes_enviar").click(function(){
