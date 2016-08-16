@@ -2,11 +2,11 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "br.com.webside.platfc"
-	versionCode="10" 
-	version   = "1.0.0">
-	<name>PlayFC</name>
+	versionCode="11" 
+	version   = "1.1.0">
+	<name>PlayFC Goool</name>
 	<description>
-		PlayFC
+		PlayFC Goool
 	</description>
 
 	<author href="http://webside.com.br" email="contato@webside.com.br">
