@@ -85,6 +85,10 @@
 </feature>
 <gap:plugin name="org.apache.cordova.geolocation" />
 
+ <feature name="Whatsapp">
+ 	<param name="android-package" value="mobi.moica.whatsapp.Whatsapp" />
+</feature>
+
 <!--Speech-->
 <plugin name="com.aserputko.speech.speechrecognition2" spec="0.1.1" source="pgb" />
 
