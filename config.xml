@@ -64,8 +64,6 @@
 <!--<feature name="http://api.phonegap.com/1.0/media"/>-->
 
 <access origin="*" />
-<access origin="whatsapp:*" launch-external="yes" />
-<allow-intent href="whatsapp:*" />
 
 <!--IOS Status Bar-->
 <feature name="StatusBar">
