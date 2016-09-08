@@ -63,7 +63,8 @@
 <!--<feature name="http://api.phonegap.com/1.0/contacts"/>-->
 <!--<feature name="http://api.phonegap.com/1.0/media"/>-->
 
-<access origin="*" />
+<allow-navigation href="*" />
+<access origin="*"/>
 
 <!--IOS Status Bar-->
 <feature name="StatusBar">
@@ -111,7 +112,7 @@
 <!-- ANALYTICS -->
 <gap:plugin name="com.danielcwilson.plugins.googleanalytics" version="0.6.1" />
 
-<uses-permission android:name="android.permission.INTERNET" />
+
 
 <!-- Teclado sobrepondo para o android, igual iphone -->
 <!--<preference name="android-windowSoftInputMode" value="adjustPan" />-->
