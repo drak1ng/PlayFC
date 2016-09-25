@@ -112,7 +112,7 @@
 <!-- Device -->
 <gap:plugin name="org.apache.cordova.device" />
 
-<gap:plugin name="org.li8.inappbrowser" version="0.1" />
+<plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
 
 
 
