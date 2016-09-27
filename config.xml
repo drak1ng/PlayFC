@@ -85,7 +85,7 @@
 </feature>
 <gap:plugin name="org.apache.cordova.geolocation" />
 
-<plugin name="mobi.moica.whatsapp" spec="0.0.1" source="pgb" />
+<plugin name="nl.x-services.plugins.socialsharing" spec="4.3.8" source="pgb" />
 
 <!--Speech-->
 <plugin name="com.aserputko.speech.speechrecognition2" spec="0.1.1" source="pgb" />
