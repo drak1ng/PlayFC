@@ -119,6 +119,10 @@
 <!-- ANALYTICS -->
 <gap:plugin name="com.danielcwilson.plugins.googleanalytics" version="0.6.1" />
 
+ <feature name="Whatsapp">
+ 	<param name="android-package" value="mobi.moica.whatsapp.Whatsapp" />
+</feature>
+
 <!-- Teclado sobrepondo para o android, igual iphone -->
 <!--<preference name="android-windowSoftInputMode" value="adjustPan" />-->
 
