@@ -2,8 +2,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "br.com.webside.platfc"
-	versionCode="14" 
-	version   = "1.4.0">
+	versionCode="12" 
+	version   = "1.2.0">
 	<name>PlayFC Goool</name>
 	<description>
 		PlayFC Goool
@@ -85,6 +85,10 @@
 </feature>
 <gap:plugin name="org.apache.cordova.geolocation" />
 
+ <feature name="Whatsapp">
+ 	<param name="android-package" value="mobi.moica.whatsapp.Whatsapp" />
+</feature>
+
 <!--Speech-->
 <plugin name="com.aserputko.speech.speechrecognition2" spec="0.1.1" source="pgb" />
 
@@ -92,7 +96,7 @@
 <gap:plugin name="org.apache.cordova.network-information" />
 
 <!--In App Browser-->
-<gap:plugin name="org.apache.cordova.InAppBrowser" />
+<gap:plugin name="org.li8.inappbrowser" version="0.1" />
 
 <!--Camera-->
 <gap:plugin name="org.apache.cordova.camera" />
@@ -109,18 +113,13 @@
 <!-- ANALYTICS -->
 <gap:plugin name="com.danielcwilson.plugins.googleanalytics" version="0.6.1" />
 
- <feature name="Whatsapp">
- 	<param name="android-package" value="mobi.moica.whatsapp.Whatsapp" />
-</feature>
-
 <!-- Teclado sobrepondo para o android, igual iphone -->
 <!--<preference name="android-windowSoftInputMode" value="adjustPan" />-->
 
 <!-- Custom Preferences-->
 <!--<preference name="phonegap-version" value="3.7.0" />-->          <!-- all: current version of PhoneGap -->
 <!--<preference name="phonegap-version" value="3.5.0" />-->         <!-- all: current version of PhoneGap -->
-<preference name="phonegap-version" value="3.6.3" />         <!-- all: current version of PhoneGap -->
-<!--<preference name="phonegap-version"           value="cli-6.3.0" />-->          <!-- all: current version of PhoneGap -->
+<preference name="phonegap-version"           value="3.6.3" />          <!-- all: current version of PhoneGap -->
 <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
 <preference name="target-device"              value="handset" />      <!-- all: possible values handset, tablet, or universal -->
 <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
